@@ -1,24 +1,24 @@
-# started on Tue Dec 13 14:30:20 2022
+# started on Tue Dec 13 14:38:30 2022
 
 
  Performance counter stats for 'CPU(s) 16-23':
 
-   645,444,383,279      cpu_atom/cpu-cycles:u/                                        (37.48%)
-    38,620,332,202      cpu_atom/cpu-cycles:k/                                        (37.49%)
- 1,111,581,327,095      cpu_atom/instructions:u/                                      (43.74%)
-    31,980,567,520      cpu_atom/instructions:k/                                      (43.75%)
-     2,946,318,820      cpu_atom/r0280:u/                                             (43.76%)
-     1,193,336,698      cpu_atom/r0280:k/                                             (43.76%)
-     2,444,347,028      cpu_atom/r0151:u/                                             (43.77%)
-       332,151,150      cpu_atom/r0151:k/                                             (43.77%)
-    24,247,735,905      cpu_atom/r2724:u/                                             (43.77%)
-     3,361,221,676      cpu_atom/r2724:k/                                             (43.76%)
-     2,370,913,505      cpu_atom/cache-misses:u/                                      (37.50%)
-       335,499,632      cpu_atom/cache-misses:k/                                      (37.50%)
-        25,103,305      cpu_atom/r0e85:u/                                             (37.49%)
-         2,185,850      cpu_atom/r0e85:k/                                             (37.48%)
-       118,918,845      cpu_atom/r0e08:u/                                             (37.48%)
-        14,962,603      cpu_atom/r0e08:k/                                             (37.48%)
+   533,008,610,581      cpu_atom/cpu-cycles:u/                                        (37.48%)
+    64,959,351,949      cpu_atom/cpu-cycles:k/                                        (37.49%)
+   829,550,145,127      cpu_atom/instructions:u/                                      (43.74%)
+    62,491,053,215      cpu_atom/instructions:k/                                      (43.75%)
+     3,996,645,906      cpu_atom/r0280:u/                                             (43.75%)
+     2,038,342,171      cpu_atom/r0280:k/                                             (43.76%)
+     3,105,120,561      cpu_atom/r0151:u/                                             (43.77%)
+       568,526,920      cpu_atom/r0151:k/                                             (43.77%)
+    27,332,868,334      cpu_atom/r2724:u/                                             (43.77%)
+     5,537,739,086      cpu_atom/r2724:k/                                             (43.77%)
+     1,972,319,722      cpu_atom/cache-misses:u/                                      (37.51%)
+       522,525,257      cpu_atom/cache-misses:k/                                      (37.50%)
+        33,101,473      cpu_atom/r0e85:u/                                             (37.49%)
+         2,454,416      cpu_atom/r0e85:k/                                             (37.49%)
+        67,768,696      cpu_atom/r0e08:u/                                             (37.48%)
+        19,703,681      cpu_atom/r0e08:k/                                             (37.48%)
 
-      60.000930628 seconds time elapsed
+      60.001079903 seconds time elapsed
 

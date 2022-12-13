@@ -11,3 +11,4 @@ sleep 60
 
 # Step 4: Record counters for 60s. Run with & to prevent blocking. 
 bash ../perf_scripts/perf_counters_E.sh ./results/data_analytics_E.out 60
+bash ../perf_scripts/perf_counters_allE.sh ./results/data_analytics_E 60
