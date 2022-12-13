@@ -1,0 +1,24 @@
+# started on Mon Dec 12 23:40:38 2022
+
+
+ Performance counter stats for 'CPU(s) 22':
+
+     8,017,164,891      cpu_atom/cpu-cycles:u/                                        (37.48%)
+     1,968,004,135      cpu_atom/cpu-cycles:k/                                        (37.49%)
+     8,410,860,222      cpu_atom/instructions:u/                                      (43.74%)
+       828,649,005      cpu_atom/instructions:k/                                      (43.75%)
+        77,445,668      cpu_atom/r0280:u/                                             (43.75%)
+        47,643,298      cpu_atom/r0280:k/                                             (43.76%)
+        38,335,224      cpu_atom/r0151:u/                                             (43.77%)
+         9,313,701      cpu_atom/r0151:k/                                             (43.77%)
+       417,610,039      cpu_atom/r2724:u/                                             (43.77%)
+       135,681,238      cpu_atom/r2724:k/                                             (43.77%)
+        28,831,146      cpu_atom/cache-misses:u/                                      (37.51%)
+        12,868,585      cpu_atom/cache-misses:k/                                      (37.50%)
+           931,538      cpu_atom/r0e85:u/                                             (37.49%)
+           237,629      cpu_atom/r0e85:k/                                             (37.49%)
+         1,493,840      cpu_atom/r0e08:u/                                             (37.48%)
+         1,092,285      cpu_atom/r0e08:k/                                             (37.48%)
+
+      60.000537587 seconds time elapsed
+
