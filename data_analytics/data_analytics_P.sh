@@ -1,5 +1,5 @@
 # Step 1: Set up test for data analytics.
-
+docker network create hadoop-net
 
 # Step 2: Pin tasks to P cores. Run 1 master, 1 slave. 
 docker run --rm --cpuset-cpus 0 -d --net hadoop-net --name master --hostname master cloudsuite3/data-analytics master

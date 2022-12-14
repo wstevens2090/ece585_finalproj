@@ -1,24 +1,24 @@
-# started on Tue Dec 13 15:14:15 2022
+# started on Tue Dec 13 15:47:08 2022
 
 
  Performance counter stats for 'CPU(s) 13':
 
-     4,927,491,021      cpu_core/cpu-cycles:u/                                        (21.89%)
-     1,930,118,310      cpu_core/cpu-cycles:k/                                        (25.02%)
-     6,856,598,011      cpu_core/instructions:u/                                      (21.86%)
-     1,477,899,840      cpu_core/instructions:k/                                      (24.99%)
-        21,872,378      cpu_core/r0280:u/                                             (18.75%)
-        17,090,857      cpu_core/r0280:k/                                             (18.76%)
-       142,353,262      cpu_core/r0151:u/                                             (18.77%)
-        28,458,703      cpu_core/r0151:k/                                             (18.77%)
-        31,989,615      cpu_core/r2724:u/                                             (12.51%)
-        31,672,978      cpu_core/r2724:k/                                             (12.51%)
-        18,153,891      cpu_core/cache-misses:u/                                      (15.63%)
-         7,740,083      cpu_core/cache-misses:k/                                      (18.76%)
-           646,397      cpu_core/r0e11:u/                                             (18.76%)
-           131,561      cpu_core/r0e11:k/                                             (18.76%)
-         1,080,825      cpu_core/r0e12:u/                                             (18.76%)
-           838,607      cpu_core/r0e12:k/                                             (18.76%)
+     3,709,981,408      cpu_core/cpu-cycles:u/                                        (21.84%)
+     1,884,968,786      cpu_core/cpu-cycles:k/                                        (21.89%)
+     3,680,876,098      cpu_core/instructions:u/                                      (25.02%)
+     1,196,002,056      cpu_core/instructions:k/                                      (28.14%)
+        18,410,189      cpu_core/r0280:u/                                             (21.89%)
+        17,498,627      cpu_core/r0280:k/                                             (21.89%)
+        86,635,636      cpu_core/r0151:u/                                             (21.89%)
+        43,140,002      cpu_core/r0151:k/                                             (21.89%)
+        25,729,754      cpu_core/r2724:u/                                             (12.50%)
+        32,767,401      cpu_core/r2724:k/                                             (12.50%)
+        16,915,980      cpu_core/cache-misses:u/                                      (15.62%)
+         8,688,788      cpu_core/cache-misses:k/                                      (18.74%)
+           679,916      cpu_core/r0e11:u/                                             (18.73%)
+           190,046      cpu_core/r0e11:k/                                             (18.72%)
+         1,359,884      cpu_core/r0e12:u/                                             (18.72%)
+         1,137,056      cpu_core/r0e12:k/                                             (18.72%)
 
-      60.000402042 seconds time elapsed
+      60.000419880 seconds time elapsed
 

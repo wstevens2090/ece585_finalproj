@@ -1,0 +1,24 @@
+# started on Wed Dec 14 12:10:47 2022
+
+
+ Performance counter stats for 'CPU(s) 12':
+
+    89,346,888,709      cpu_core/cpu-cycles:u/                                        (21.84%)
+     4,999,198,064      cpu_core/cpu-cycles:k/                                        (24.97%)
+   158,843,222,125      cpu_core/instructions:u/                                      (28.09%)
+     4,960,492,125      cpu_core/instructions:k/                                      (28.10%)
+        35,202,781      cpu_core/r0280:u/                                             (24.99%)
+        25,036,028      cpu_core/r0280:k/                                             (25.00%)
+       631,111,523      cpu_core/r0151:u/                                             (25.00%)
+        58,949,597      cpu_core/r0151:k/                                             (25.01%)
+       200,389,418      cpu_core/r2724:u/                                             (12.51%)
+        42,602,587      cpu_core/r2724:k/                                             (12.51%)
+       120,666,642      cpu_core/cache-misses:u/                                      (15.63%)
+        17,645,370      cpu_core/cache-misses:k/                                      (18.76%)
+         1,374,555      cpu_core/r0e11:u/                                             (18.76%)
+           158,401      cpu_core/r0e11:k/                                             (18.76%)
+         7,872,206      cpu_core/r0e12:u/                                             (18.76%)
+         1,837,440      cpu_core/r0e12:k/                                             (18.76%)
+
+      60.000453389 seconds time elapsed
+

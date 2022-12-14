@@ -1,0 +1,24 @@
+# started on Wed Dec 14 12:10:47 2022
+
+
+ Performance counter stats for 'CPU(s) 0':
+
+     8,973,416,667      cpu_core/cpu-cycles:u/                                        (21.89%)
+     4,449,303,014      cpu_core/cpu-cycles:k/                                        (25.01%)
+    12,454,376,378      cpu_core/instructions:u/                                      (28.14%)
+     4,743,446,456      cpu_core/instructions:k/                                      (28.14%)
+        51,172,728      cpu_core/r0280:u/                                             (25.01%)
+        26,335,350      cpu_core/r0280:k/                                             (25.01%)
+       150,689,212      cpu_core/r0151:u/                                             (25.01%)
+        64,318,585      cpu_core/r0151:k/                                             (25.01%)
+        57,583,866      cpu_core/r2724:u/                                             (12.51%)
+        39,679,187      cpu_core/r2724:k/                                             (12.50%)
+        29,453,299      cpu_core/cache-misses:u/                                      (15.62%)
+        15,353,611      cpu_core/cache-misses:k/                                      (18.74%)
+         1,806,341      cpu_core/r0e11:u/                                             (18.73%)
+            90,771      cpu_core/r0e11:k/                                             (18.73%)
+         2,356,480      cpu_core/r0e12:u/                                             (18.72%)
+         1,291,625      cpu_core/r0e12:k/                                             (18.72%)
+
+      60.000487357 seconds time elapsed
+
