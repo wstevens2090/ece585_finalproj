@@ -1,0 +1,24 @@
+# started on Wed Dec 14 17:03:06 2022
+
+
+ Performance counter stats for 'CPU(s) 8':
+
+     1,397,523,927      cpu_core/cpu-cycles:u/                                        (21.84%)
+     6,856,031,591      cpu_core/cpu-cycles:k/                                        (24.96%)
+     1,560,708,940      cpu_core/instructions:u/                                      (28.09%)
+     8,963,992,514      cpu_core/instructions:k/                                      (28.09%)
+        11,310,516      cpu_core/r0280:u/                                             (24.98%)
+        47,321,463      cpu_core/r0280:k/                                             (24.99%)
+        30,732,864      cpu_core/r0151:u/                                             (25.00%)
+       149,506,351      cpu_core/r0151:k/                                             (25.01%)
+        11,802,759      cpu_core/r2724:u/                                             (12.51%)
+        48,942,314      cpu_core/r2724:k/                                             (12.51%)
+         5,436,642      cpu_core/cache-misses:u/                                      (15.64%)
+        15,607,124      cpu_core/cache-misses:k/                                      (18.76%)
+         2,197,704      cpu_core/r0e11:u/                                             (18.76%)
+            76,906      cpu_core/r0e11:k/                                             (18.76%)
+         3,224,564      cpu_core/r0e12:u/                                             (18.76%)
+         3,166,637      cpu_core/r0e12:k/                                             (18.76%)
+
+      60.001003690 seconds time elapsed
+
