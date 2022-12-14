@@ -4,7 +4,7 @@
 # config variables
 waittime=60
 runtime=60
-num_clients=1
+num_clients=15
 
 # cpulist = 0-max_cpu
 # cpulist="0-${1}"
