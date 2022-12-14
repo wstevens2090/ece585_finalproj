@@ -1,0 +1,24 @@
+# started on Wed Dec 14 17:25:52 2022
+
+
+ Performance counter stats for 'CPU(s) 13':
+
+       229,873,534      cpu_core/cpu-cycles:u/                                        (25.00%)
+     3,004,420,798      cpu_core/cpu-cycles:k/                                        (25.00%)
+       159,794,289      cpu_core/instructions:u/                                      (28.13%)
+     3,795,200,010      cpu_core/instructions:k/                                      (28.13%)
+         2,649,679      cpu_core/r0280:u/                                             (28.13%)
+        18,141,991      cpu_core/r0280:k/                                             (28.14%)
+         6,128,350      cpu_core/r0151:u/                                             (28.14%)
+        88,757,771      cpu_core/r0151:k/                                             (28.14%)
+         2,466,912      cpu_core/r2724:u/                                             (12.51%)
+        31,550,714      cpu_core/r2724:k/                                             (12.50%)
+           611,274      cpu_core/cache-misses:u/                                      (15.62%)
+         4,623,932      cpu_core/cache-misses:k/                                      (18.74%)
+           170,150      cpu_core/r0e11:u/                                             (18.73%)
+            29,172      cpu_core/r0e11:k/                                             (18.72%)
+           211,556      cpu_core/r0e12:u/                                             (18.72%)
+           370,454      cpu_core/r0e12:k/                                             (18.72%)
+
+      60.000538929 seconds time elapsed
+

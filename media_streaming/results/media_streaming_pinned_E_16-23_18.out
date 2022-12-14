@@ -1,0 +1,24 @@
+# started on Wed Dec 14 18:31:39 2022
+
+
+ Performance counter stats for 'CPU(s) 18':
+
+       790,997,163      cpu_atom/cpu-cycles:u/                                        (18.76%)
+     9,995,364,943      cpu_atom/cpu-cycles:k/                                        (18.76%)
+       190,225,338      cpu_atom/instructions:u/                                      (21.88%)
+     6,367,809,560      cpu_atom/instructions:k/                                      (21.88%)
+         7,177,439      cpu_atom/r0280:u/                                             (21.88%)
+       141,101,285      cpu_atom/r0280:k/                                             (21.88%)
+         7,278,537      cpu_atom/r0151:u/                                             (21.89%)
+        84,900,724      cpu_atom/r0151:k/                                             (21.89%)
+        74,784,085      cpu_atom/r2724:u/                                             (21.88%)
+       600,267,164      cpu_atom/r2724:k/                                             (21.88%)
+         1,932,770      cpu_atom/cache-misses:u/                                      (18.75%)
+        19,001,269      cpu_atom/cache-misses:k/                                      (18.74%)
+         3,241,440      cpu_atom/r0e85:u/                                             (18.73%)
+         4,098,755      cpu_atom/r0e85:k/                                             (18.72%)
+         5,470,163      cpu_atom/r0e08:u/                                             (18.72%)
+        22,655,167      cpu_atom/r0e08:k/                                             (18.72%)
+
+      60.000708303 seconds time elapsed
+

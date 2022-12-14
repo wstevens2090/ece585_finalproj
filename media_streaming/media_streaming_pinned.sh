@@ -1,4 +1,4 @@
-# Usage: bash media_streaming_multicore.sh [max_cpu]
+# Usage: bash media_streaming_pinned.sh [max_cpu]
 # runs 1 server and 15 clients on cpus [0, max_cpu]
 
 # config variables
@@ -13,12 +13,12 @@ cpulist="0-${1}"
 docker network create streaming_network
 
 # pins master, 3 slaves to cpus on $cpulist
-docker run -d --cpuset-cpus 0-${1} --rm --name streaming_server --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:server
+docker run -d --cpuset-cpus 0 --rm --name streaming_server --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:server
 for i in $( seq 1 $num_clients )
 do 
     name=streaming_client_"$i"
     logfile="./results/client_${i}_results"
-    docker run -t --cpuset-cpus 0-${1} --rm --name=$name -v $logfile --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:client streaming_server &
+    docker run -t --cpuset-cpus ${i} --rm --name=$name -v $logfile --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:client streaming_server &
 done    
 
 # runs benchmark
@@ -28,11 +28,11 @@ done
 sleep $waittime
 
 # records activity on cpus [0, max_cpu] for $runtime seconds
-filename="./results/media_streaming_0-${1}.out"
+filename="./results/media_streaming_pinned_0-${1}.out"
 bash ../perf_scripts/perf_counters_1P.sh $filename $runtime ${cpulist} &
 for i in $( seq 0 $1 )
 do
-    filename="./results/media_streaming_P_${cpulist}_${i}.out"
+    filename="./results/media_streaming_pinned_P_${cpulist}_${i}.out"
     bash ../perf_scripts/perf_counters_1P.sh $filename $runtime $i &
 done
 

@@ -28,7 +28,7 @@ done
 sleep $waittime
 
 # records activity on cpus [0, max_cpu] for $runtime seconds
-filename="./results/media_streaming.out"
+filename="./results/media_streaming_0-0.out"
 bash ../perf_scripts/perf_counters_1P.sh $filename $runtime 0 &
 # for i in $( seq 0 $1 )
 # do
