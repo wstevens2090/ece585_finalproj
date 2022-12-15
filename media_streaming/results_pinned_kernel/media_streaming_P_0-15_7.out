@@ -1,0 +1,24 @@
+# started on Thu Dec 15 16:22:08 2022
+
+
+ Performance counter stats for 'CPU(s) 7':
+
+        36,815,166      cpu_core/cpu-cycles:u/                                        (28.13%)
+       647,891,651      cpu_core/cpu-cycles:k/                                        (28.13%)
+        31,328,869      cpu_core/instructions:u/                                      (28.13%)
+       255,065,190      cpu_core/instructions:k/                                      (28.13%)
+           186,045      cpu_core/r0280:u/                                             (28.14%)
+         8,756,087      cpu_core/r0280:k/                                             (28.14%)
+           247,069      cpu_core/r0151:u/                                             (28.14%)
+         5,487,286      cpu_core/r0151:k/                                             (28.14%)
+           298,839      cpu_core/r2724:u/                                             (12.51%)
+        16,390,275      cpu_core/r2724:k/                                             (12.50%)
+             9,674      cpu_core/cache-misses:u/                                      (15.62%)
+           303,139      cpu_core/cache-misses:k/                                      (18.74%)
+            11,227      cpu_core/r0e11:u/                                             (18.73%)
+           135,261      cpu_core/r0e11:k/                                             (18.72%)
+            12,664      cpu_core/r0e12:u/                                             (18.72%)
+           546,895      cpu_core/r0e12:k/                                             (18.72%)
+
+      60.001006469 seconds time elapsed
+
