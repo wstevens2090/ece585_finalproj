@@ -1,0 +1,24 @@
+# started on Thu Dec 15 17:58:53 2022
+
+
+ Performance counter stats for 'CPU(s) 3':
+
+     1,289,421,342      cpu_core/cpu-cycles:u/                                        (25.00%)
+    16,539,909,360      cpu_core/cpu-cycles:k/                                        (25.00%)
+       241,704,451      cpu_core/instructions:u/                                      (28.13%)
+    15,287,838,790      cpu_core/instructions:k/                                      (28.13%)
+         9,175,749      cpu_core/r0280:u/                                             (28.13%)
+        95,751,922      cpu_core/r0280:k/                                             (28.13%)
+        35,883,682      cpu_core/r0151:u/                                             (28.14%)
+       402,321,769      cpu_core/r0151:k/                                             (28.14%)
+        11,168,902      cpu_core/r2724:u/                                             (12.51%)
+       105,457,447      cpu_core/r2724:k/                                             (12.51%)
+         1,190,851      cpu_core/cache-misses:u/                                      (15.63%)
+        13,695,585      cpu_core/cache-misses:k/                                      (18.75%)
+         6,181,149      cpu_core/r0e11:u/                                             (18.74%)
+           156,794      cpu_core/r0e11:k/                                             (18.73%)
+         9,647,997      cpu_core/r0e12:u/                                             (18.72%)
+        10,308,058      cpu_core/r0e12:k/                                             (18.72%)
+
+      60.005030371 seconds time elapsed
+

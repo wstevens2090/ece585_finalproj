@@ -1,0 +1,24 @@
+# started on Thu Dec 15 18:08:26 2022
+
+
+ Performance counter stats for 'CPU(s) 9':
+
+       163,524,647      cpu_core/cpu-cycles:u/                                        (28.13%)
+     2,281,777,933      cpu_core/cpu-cycles:k/                                        (28.13%)
+       125,335,849      cpu_core/instructions:u/                                      (28.13%)
+     2,375,483,712      cpu_core/instructions:k/                                      (28.13%)
+         1,840,138      cpu_core/r0280:u/                                             (28.13%)
+        16,908,398      cpu_core/r0280:k/                                             (28.14%)
+         3,196,510      cpu_core/r0151:u/                                             (28.14%)
+        50,910,399      cpu_core/r0151:k/                                             (25.01%)
+         1,101,054      cpu_core/r2724:u/                                             (12.51%)
+        12,923,244      cpu_core/r2724:k/                                             (12.50%)
+           566,602      cpu_core/cache-misses:u/                                      (15.62%)
+         2,715,979      cpu_core/cache-misses:k/                                      (18.74%)
+           127,524      cpu_core/r0e11:u/                                             (18.74%)
+            29,172      cpu_core/r0e11:k/                                             (18.73%)
+           181,338      cpu_core/r0e12:u/                                             (18.72%)
+           403,309      cpu_core/r0e12:k/                                             (18.73%)
+
+      60.001014366 seconds time elapsed
+

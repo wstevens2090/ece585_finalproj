@@ -38,7 +38,7 @@ do
 done
 # Add another script for recording core 0
 filename="./results_pinned_kernel/media_streaming_E_${cpulist}_0.out"
-bash ../perf_scripts/perf_counters_1E.sh $filename $runtime 0 &
+bash ../perf_scripts/perf_counters_1P.sh $filename $runtime 0 &
 
 # waits $runtime seconds for performance counting
 sleep $runtime

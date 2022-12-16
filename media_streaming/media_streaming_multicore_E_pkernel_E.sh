@@ -13,12 +13,12 @@ cpulist="16-${1}"
 docker network create streaming_network
 
 # pins master, 3 slaves to cpus on $cpulist
-docker run -d --cpuset-cpus 16 --rm --name streaming_server --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:server
+docker run -d --cpuset-cpus 16-${1} --rm --name streaming_server --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:server
 for i in $( seq 1 $num_clients )
 do 
     name=streaming_client_"$i"
     logfile="./results/client_${i}_results"
-    docker run -t --cpuset-cpus $((${i}/2+16)) --rm --name=$name -v $logfile --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:client streaming_server &
+    docker run -t --cpuset-cpus 16-${1} --rm --name=$name -v $logfile --volumes-from streaming_dataset --net streaming_network cloudsuite3/media-streaming:client streaming_server &
 done    
 
 # runs benchmark
@@ -26,19 +26,19 @@ done
 
 # waits for $waittime for benchmark to set-up
 sleep $waittime
-sudo bash ../pin_kernel_scripts/pin_kernel.sh
+sudo bash ../pin_kernel_scripts/pin_kernel_E.sh
 
 # records activity on cpus [16, max_cpu] for $runtime seconds
-filename="./results_pinned_kernel/media_streaming_pinned_16-${1}.out"
+filename="./results_pinned_kernel_E/media_streaming_16-${1}.out"
 bash ../perf_scripts/perf_counters_1E.sh $filename $runtime ${cpulist} &
 for i in $( seq 16 $1 )
 do
-    filename="./results_pinned_kernel/media_streaming_pinned_E_${cpulist}_${i}.out"
+    filename="./results_pinned_kernel_E/media_streaming_E_${cpulist}_${i}.out"
     bash ../perf_scripts/perf_counters_1E.sh $filename $runtime $i &
 done
-# Add another script for recording core 0
-filename="./results_pinned_kernel/media_streaming_pinned_E_${cpulist}_0.out"
-bash ../perf_scripts/perf_counters_1P.sh $filename $runtime 0 &
+# # Add another script for recording core 16
+# filename="./results_pinned_kernel_E/media_streaming_E_${cpulist}_16.out"
+# bash ../perf_scripts/perf_counters_1P.sh $filename $runtime 16 &
 
 # waits $runtime seconds for performance counting
 sleep $runtime
